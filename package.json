@@ -1,0 +1,26 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Daily Routine Mern stack",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && run build",
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon server.js\" \"npm run client\""
+  },
+  "author": "jimmy vo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  }
+}

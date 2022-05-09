@@ -1,0 +1,25 @@
+  function addNote(e) {
+    e.preventDefault();
+    axios.post("http://localhost:8080/api/save")
+    .then(()=> {
+      console.log("Data has sent to the server")
+      getList()
+      setNote("")
+    })
+    .catch(err=> {
+      console.log("Internal error" + err)
+    })
+     
+  }
+
+  // Get List Collections from mongoose server
+   function getList(){
+     axios.get("http://localhost:8080/api")
+     .then((response)=> {
+       const data = response.data;
+       setNoteArray(data)
+     })
+     .catch(err => {
+       console.log(err)
+     })
+   }

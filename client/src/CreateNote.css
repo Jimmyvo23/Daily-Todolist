@@ -1,0 +1,17 @@
+/* Styling Button */
+
+/* CSS */
+.button {
+min-height: 10px;
+  width: 50px;
+  border-radius: 30%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 5px;
+  border-width: 0;
+}
+.button:hover {
+    background-color: #9772FB;
+}
